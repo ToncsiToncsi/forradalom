@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>48-49</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+    .gradient-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(45deg, #b8860b, #cd7f32);    
+            z-index: -10;  
+}
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    font-weight: bold;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;  
+    
+    height: 100vh;
+    margin: 0; 
+}
+.image-container img {
+            filter: sepia(20%) contrast(110%);
+            width: 320px;
+            border-radius: 12px;
+            margin-top: 20px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+            border: 4px solid #b8860b;
+             transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+            filter: sepia(30%) contrast(120%);
+        }
+
+       
+        .btn-custom {
+            background-color: #ffd700;
+            border: 2px solid #b8860b;
+            color: black;
+            padding: 12px 24px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-top: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+            
+        }
+
+        .btn-custom:hover {
+            
+            background-color: #ffcc00;
+            border-color: #8b6508;
+            transform: scale(1.1);
+        }
+        h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #000000; 
+}
+
+
+p {
+    font-size: 1.5rem;
+    max-width: 80%;
+    margin: 10px auto;
+    line-height: 1.6;
+    color: #dadada; 
+}
+        
+</style>
+</head>
+
+<body> 
+    <div class="gradient-bg"></div>
+    <div class="content">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="btn btn-custom" aria-current="page" href="index.html">Kezdőlap</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-custom" href="galéria.html">Galéria</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-custom" href="ismeretterjeszto.html">Ismeretterjesztő</a>
+        </li> 
+      </ul>
+</a>
+    <h2>Az 1848-49-es forradalom és szabadságharc</h2>
+    <p><strong>Az 1848-49-es</strong> forradalom és szabadságharc Magyarország történetének egyik legfontosabb eseménye volt.
+        Március 15-én a pesti ifjúság és polgárság élére állt, és a szabadság, a függetlenség, valamint a demokratikus reformok iránti vágyat fejezte ki.</p>
+    
+    <p>A forradalom eredetilegia</em> a Habsburg-uralkodóval szembeni reformokat célzó, békés mozgalomnak indult, de a politikai helyzet gyorsan eszkalálódott, 
+        és fegyveres szabadságharcba torkollott.</p>
+    
+    <p> A magyarok végül<strong>vereséget</strong>szenvedtek, de az 1848-49-es események örökre meghatározták a magyar nemzet identitását és harcát a függetlenségért. </p>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdtrDPsuY52B6nDcY5bzVOvTYiSS71pMk4wg&s" alt="Templom" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Aak7R54kso3dYNSU7brK8WGSMFdfckSuQg&s" alt="Templom" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNInNql7RsGClCw4niLxvn4T7zpcYh3tXPDg&s" alt="Templom" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html> 
+
+ 
+
+
+
+
+
+
+

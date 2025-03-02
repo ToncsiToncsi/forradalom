@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galéria</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #573131;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.album {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.responsive-container-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.img-cont {
+    display: flex;
+    gap: 10px;
+}
+
+.img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.img:hover {
+    transform: scale(1.1);
+    border-color: gold; 
+}
+
+.img.img-big {
+    width: 300px;
+    height: 200px;
+}
+
+.img-last {
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    .img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .img.img-big {
+        width: 250px;
+        height: 150px;
+    }
+}
+
+
+    .btn-custom {
+           
+            background-color: #915353;
+            border: 2px solid #573131;
+            color: black;
+            padding: 12px 24px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-top: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-custom:hover {
+            background-color: #5e1816;
+            border-color: #ffffff;
+            transform: scale(1.1);
+        }
+</style>
+</head>
+<body>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="btn btn-custom" aria-current="page" href="index.html">Kezdőlap</a>
+        </li>
+        <li class="nav-item">
+            <a class="btn btn-custom" href="galéria.html">Galéria</a>
+        </li>
+        <li class="nav-item">
+            <a class="btn btn-custom" href="ismeretterjeszto.html">Ismeretterjesztő</a>
+        </li> 
+    </ul>
+    
+        <h1>Galéria</h1>
+        <div class="album">
+        <div class="responsive-container-block bg">
+        <div class="album-item">
+          <div class="responsive-container-block img-cont">
+            <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrBhUu7-4wFAw0rphS1ZgSej4JV2Ut5fHbxw&s">
+            <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJz608VhNUesjwLqUoDx1MOqV4lTJtuJVtSg&s">
+            <img class="img img-last" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrObMggLq7pCwUb5qFS5Rxxk7UpMmg1V0OqA&s">
+          </div>
+          <div class="responsive-container-block img-cont">
+            <img class="img img-big" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbho52hks03TQl415xdY1kQbiyTaZxDaeFZw&s">
+            <img class="img img-big img-last" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0_Iv1Y7QCnbC3Wj0ihDr8O2ksfzkRLdtiOQ&s">
+          </div>
+          <div class="responsive-container-block img-cont">
+            <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVYWrFDNVheGu6iOgaRqi1fsSzIMddfIFRMw&s">
+            <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh0oON6RhCUU09EOzM6EQ7x10TRJQT2Uvw9w&s">
+            <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREokKzbnyXYgLyGdL72tuy9Y6IFA95sWQM4Q&s">
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
+
